@@ -11,12 +11,9 @@ bool isPalindrome(int x){
     if(x<0)
     {
         return false;
-    }else if(x==0)
-    {
-        return true;
     }else
     {
-        for(int i=0;i<20;i++)
+        for(int i=0;i<20;++i)
         {
             num[i]=x%10;
             x/=10;
@@ -27,7 +24,7 @@ bool isPalindrome(int x){
             }
         }
     }
-    for(int i=0;i<count/2;i++)
+    for(int i=0;i<count/2;++i)
     {
         if(num[i]!=num[count-i-1])
         {
