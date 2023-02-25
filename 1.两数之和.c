@@ -8,6 +8,9 @@
 /**
  * Note: The returned array must be malloced, assume caller calls free().
  */
+
+// 本题为复制网上答案
+
 int* twoSum(int* nums, int numsSize, int target, int* returnSize){
     int *num = malloc(sizeof(int)*2);
     for(int i = 0; i < numsSize - 1; i++)
